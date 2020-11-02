@@ -1,8 +1,8 @@
 package uaslp.enginering.labs;
 
-public class  EditBox extends Control{
+public class EditBox extends Control{
 
-    protected void draw() {
-        System.out.print("[|        ]");
+    protected void draw(){
+        System.out.print("[ |        ]");
     }
 }

@@ -1,18 +1,24 @@
 package uaslp.enginering.labs;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ListBox extends Control{
-    List<String> options;
-    public ListBox(String ... options){
+    private List<String> options;
+    public ListBox(String ...options) {
         this.options = new ArrayList<>(options.length);
-        Collections.addAll(this.options,options);
+        for (String option:
+                options) {
+            this.options.add(option);
+        }
+
     }
 
     protected void draw(){
-        for (String option : options){
-            System.out.print(option + " -");
+        for (String option :
+                options) {
+            System.out.print(option + " - ");
         }
     }
 }

@@ -1,13 +1,12 @@
 package uaslp.enginering.labs;
 
 public class Checkbox extends Control {
-    private String label;
+    private String textCheckBox;
 
-    public Checkbox(String label){
-        this.label = label;
+    public Checkbox(String text) {
+        textCheckBox = text;
     }
-    public  void draw(){
-        System.out.print("[ ] " + label);
+    protected void draw(){
+        System.out.print("[]" + textCheckBox);
     }
-
 }
